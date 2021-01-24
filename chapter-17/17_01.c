@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "debug.h"
 
 void readArray(int*, int);
 void calculate(int*, int*, int*, int*);
