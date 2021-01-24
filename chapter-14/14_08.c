@@ -13,7 +13,7 @@ int waitForChar(char);
 int main(void)
 {
 	// # Variables
-	char line[BUFSIZ];
+	char line[BUFSIZ], test;
 	FILE* fp;
 
 
@@ -28,9 +28,9 @@ int main(void)
 	// Print lines
 	do
 
-		for (int i = 0; i < BATCH && fgets(line, BUFSIZ, fp) != NULL; i++)
+		for (int i = 0; i < BATCH && (test = fgets(line, BUFSIZ, fp)) != NULL; i++)
 			printf("%s", line);
-	while (fp != NULL && waitForChar('\n'));
+	while (test != NULL && waitForChar('\n'));
 
 
 	// # Exit
