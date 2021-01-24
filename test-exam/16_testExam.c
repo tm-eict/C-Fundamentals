@@ -46,7 +46,7 @@ int lees(persoon* lijst, int grens, datum vandaag, int max, FILE* fp)
 
 	while (fgets(mens.naam, LEN, fp) != NULL && i < max)
 	{
-		fscanf(fp, "%d%d%d%c", &(mens.gebdatum.dag), &(mens.gebdatum.maand), &(mens.gebdatum.jaar));
+		fscanf(fp, "%d%d%d%*c", &(mens.gebdatum.dag), &(mens.gebdatum.maand), &(mens.gebdatum.jaar));
 		fscanf(fp, "%s%*c", mens.gemeente);
 		leeftijd = bereken(vandaag, mens);
 		if (leeftijd >= grens)
