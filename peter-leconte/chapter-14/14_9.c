@@ -68,7 +68,7 @@ int main(void)
 		printf("%d ", num2);
 		end2 = fscanf(fp2, "%d%*c", &num2);
 	}
-	//Ewout did this without the 2 extra while loops, if/ifel in 1 while. Both work, mine might be slower/faster /shrug
+	//Anon did this without the 2 extra while loops, if/ifel in 1 while. Both work, mine might be slower/faster /shrug
 	
 
 	//close files
